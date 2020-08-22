@@ -32,13 +32,13 @@ RSpec.describe "Pet specific show page", type: :feature do
     expect(page).to have_content(pet_1.name)
     expect(page).to have_content(pet_1.age)
     expect(page).to have_content(pet_1.sex)
-    expect(page).to have_content(pet_1.shelter_id)
+    expect(page).to have_content(pet_1.adoption_status)
 
     visit "/pets/#{pet_2.id}"
 
     expect(page).to have_content(pet_2.name)
     expect(page).to have_content(pet_2.age)
     expect(page).to have_content(pet_2.sex)
-    expect(page).to have_content(pet_2.shelter_id)
+    expect(page).to have_content(pet_2.adoption_status)
   end
 end
