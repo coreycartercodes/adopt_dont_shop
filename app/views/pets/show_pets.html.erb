@@ -1,11 +1,10 @@
-<h1>Pets</h1>
 
-<% @pets.each do |pet| %>
+<h1><%= @shelter.name %></h1>
+
+<% @shelter.pets.each do |pet| %>
   <h3><a href="/pets/<%= pet.id %>"><%= pet.image %></a></h3>
   <h3><a href="/pets/<%= pet.id %>"><%= pet.name %></a></h3>
   <h3><a href="/pets/<%= pet.id %>"><%= pet.age %></a></h3>
   <h3><a href="/pets/<%= pet.id %>"><%= pet.sex %></a></h3>
-  <h3><a href="/pets/<%= pet.id %>"><%= pet.shelter.name %></a></h3>
+  <h3><a href="/pets/<%= pet.id %>"><%= pet.adoption_status %></a></h3>
 <% end %>
-
-<%=link_to 'New Pet', '/pets/new' %>
