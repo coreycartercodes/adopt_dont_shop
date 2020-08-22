@@ -7,7 +7,7 @@ class PetsController < ApplicationController
   end
 
   def show
-    @pet = Pet.find(params[:id])
+    @shelter = Shelter.find(params[:id])
   end
 
   def create
