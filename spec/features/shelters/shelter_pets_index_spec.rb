@@ -24,7 +24,7 @@ RSpec.describe "Shelter specific index page", type: :feature do
     pet_2 = shelter_2.pets.create( image:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDXuKrIAVvsVmj0Tur6KgFmaycQaIJOQM6jw&usqp=CAU",
                         name:   "Marie",
                         age:    "12",
-                        sex:    "Female",
+                        sex:    "Female"
                         )
 
     visit "/shelters/#{shelter_1.id}/pets"
@@ -33,6 +33,7 @@ RSpec.describe "Shelter specific index page", type: :feature do
     expect(page).to have_content(pet_1.age)
     expect(page).to have_content(pet_1.sex)
     expect(page).to have_content(pet_1.shelter_id)
+    expect(page).to have_content(pet_1.adoption_status)
 
     visit "/shelters/#{shelter_2.id}/pets"
 
@@ -40,5 +41,6 @@ RSpec.describe "Shelter specific index page", type: :feature do
     expect(page).to have_content(pet_2.age)
     expect(page).to have_content(pet_2.sex)
     expect(page).to have_content(pet_2.shelter_id)
+    expect(page).to have_content(pet_2.adoption_status)
   end
 end
