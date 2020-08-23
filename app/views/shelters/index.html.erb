@@ -6,14 +6,16 @@
     <a href="/pets">Pets Index</a>
   </h1>
 </header>
-<br>
 <main>
   <h1>Shelters</h1>
-
+  <br>
+  <br>
 <% @shelters.each do |shelter| %>
   <h2><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h2>
   <a href="/shelters/<%= shelter.id %>/edit">Update Shelter</a>
-  <a href="/shelters/<%= shelter.id %>/delete">Delete Shelter</a><br>
+  <a href="/shelters/<%= shelter.id %>/delete">Delete Shelter</a>
+  <br>
+  <br>
 <% end %>
 
 <h2><%=link_to 'New Shelter', '/shelters/new' %></h2>

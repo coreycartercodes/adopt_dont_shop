@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ * { padding: 0; margin: 0; border: 0; box-sizing: border-box; }
+
  #header {
    position: fixed;
    width: 100%;
@@ -23,15 +25,15 @@
 
  header {
     display: block;
-    height: 120px;
+    height: 60px;
     min-width: 120px;
     text-shadow: #000 0 0 .2em;
-    background-color: #FF1493;
+    background-image: url("../images/pets.png");
 
 }
 
 main {
     display: block;
     font: 1rem 'Fira Sans', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("/app/assets/images/pets.png");
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../images/pets.png");
 }
