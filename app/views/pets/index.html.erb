@@ -6,8 +6,6 @@
   <h3><%= pet.age %></h3>
   <h3><%= pet.sex %></h3>
   <h3><%= pet.shelter.name %></h3>
-  <h4><a href="/pets/<%= pet.id %>/edit"> Update Pet</a></h4>
-  <h4><a href="/pets/<%= pet.id %>/delete"> Delete Pet</a></h4>
 <% end %>
 
 <%=link_to 'New Pet', '/pets/new' %>
