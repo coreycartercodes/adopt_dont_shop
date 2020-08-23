@@ -1,4 +1,14 @@
-<h1>Shelters</h1>
+<header>
+  <h1 style="display: inline; height: 100%; float: left">
+    <a href="/shelters">Shelters Index</a>
+  </h1>
+  <h1 style="display: inline; height: 100%; float: right; text-align: right">
+    <a href="/pets">Pets Index</a>
+  </h1>
+</header>
+<br>
+<main>
+  <h1>Shelters</h1>
 
 <% @shelters.each do |shelter| %>
   <h2><a href="/shelters/<%= shelter.id %>"><%= shelter.name %></a></h2>
@@ -7,3 +17,4 @@
 <% end %>
 
 <h2><%=link_to 'New Shelter', '/shelters/new' %></h2>
+</main>

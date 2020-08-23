@@ -1,3 +1,13 @@
+<header>
+  <h1 style="display: inline; height: 100%; float: left">
+    <a href="/shelters">Shelters Index</a>
+  </h1>
+  <h1 style="display: inline; height: 100%; float: right; text-align: right">
+    <a href="/pets">Pets Index</a>
+  </h1>
+</header>
+<br>
+<main>
 <h1>Pets</h1>
 
 <% @pets.each do |pet| %>
@@ -9,3 +19,4 @@
   <a href="/pets/<%= pet.id %>/edit">Update Pet</a>
   <a href="/pets/<%= pet.id %>/delete">Delete Pet</a><br>
 <% end %>
+</main>

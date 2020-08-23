@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ #header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+ }
+
+ header {
+    display: block;
+    height: 120px;
+    min-width: 120px;
+    text-shadow: #000 0 0 .2em;
+    background-color: #FF1493;
+
+}
+
+main {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("/app/assets/images/pets.png");
+}
