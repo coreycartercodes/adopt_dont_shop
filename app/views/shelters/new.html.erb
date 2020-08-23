@@ -1,4 +1,14 @@
-<%= form_tag '/shelters' do %>
+<header>
+  <h1 style="display: inline; height: 100%; float: left">
+    <a href="/shelters">Shelters Index</a>
+  </h1>
+  <h1 style="display: inline; height: 100%; float: right; text-align: right">
+    <a href="/pets">Pets Index</a>
+  </h1>
+</header>
+<br>
+<main>
+  <%= form_tag '/shelters' do %>
   <%= label_tag :name %><br>
   <%= text_field_tag :name %><br>
   <%= label_tag :address %><br>
@@ -11,3 +21,4 @@
   <%= text_field_tag :zip %><br>
   <%= submit_tag 'Create Shelter' %>
 <% end %>
+</main>
