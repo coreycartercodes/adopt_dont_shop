@@ -1,9 +1,9 @@
 
 <h1><%= @pet.name %></h1>
 
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.image %></a></h3>
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.name %></a></h3>
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.description %></a></h3>
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.age %></a></h3>
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.sex %></a></h3>
-  <h3><a href="/pets/<%= @pet.id %>"><%= @pet.adoption_status %></a></h3>
+  <img src="@pet.image">
+  <h3>Name: <%= @pet.name %></h3>
+  <h3>Description: <%= @pet.description %></h3>
+  <h3>Approximate Age: <%= @pet.age %></h3>
+  <h3>Sex: <%= @pet.sex %></h3>
+  <h3>Adoption Status: <%= @pet.adoption_status %></a></h3>
