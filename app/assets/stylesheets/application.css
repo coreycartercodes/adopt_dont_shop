@@ -42,6 +42,6 @@ main {
     font: 1rem 'Fira Sans', sans-serif;
     background-image:  url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/famous-dogs-from-movies-little-rascals-petey-1560303732.jpg?crop=0.772xw:0.603xh;0.151xw,0.0850xh&resize=480:*");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }
