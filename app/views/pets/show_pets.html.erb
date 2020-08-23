@@ -6,10 +6,10 @@
     <a href="/pets">Pets Index</a>
   </h1>
 </header>
-<br>
 <main>
 <h1><%= @shelter.name %></h1>
-
+<br>
+<br>
 <% @shelter.pets.each do |pet| %>
   <img src=<%= pet.image %>>
   <h3><a href="/pets/<%= pet.id %>"> Name: <%= pet.name %></a></h3>
